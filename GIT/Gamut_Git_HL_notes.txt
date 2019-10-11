@@ -354,3 +354,15 @@ Git stores each change as SHA values but SVN uses simple numbers as revisions.
 --> how do you revert a change which is committed only into local repo?
 --> how do you compare the change between local to remote?
 
+
+Git pull: git pull is used to pull the changes from the remote reposistory to existing reposistory and merge the changes.
+ git pull= git fetch + git merge
+ 
+Git fetch: git fetch is used to fetch the changes from the remote reposistory to existing reposistory but it will not merge those changes to existing reposistory.
+
+git push: git push is used to push the changes from existing reposistory to remote reposistory.
+
+git stash: Use git stash when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. The command saves your local modifications away and reverts the working directory to match the HEAD commit.
+
+git cheery-pick:Cherry picking in Git is designed to apply some commit from one branch into another branch. It can be done if you eg. made a mistake and committed a change into wrong branch, but do not want to merge the whole branch. You can just eg. revert the commit and cherry-pick it on another branch.
+
